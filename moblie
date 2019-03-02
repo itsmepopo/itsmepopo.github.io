@@ -1,0 +1,93 @@
+/* main body */
+#main-content, body, footer {
+  background: var(--color-2) !important;
+}
+
+/* 고정 포스트 로고 색 */
+span.a-badge i.fa.fa-info-circle { color: red !important; }
+
+header {
+    border-bottom-color: var(--color-4) !important;
+    background: var(--color-2) !important;
+}
+
+/* 상단 로고 */
+header > #header-area > a > h1 {
+    background: var(--logo-URL) no-repeat;
+    background-size: var(--logo-size-mobile);
+}
+header > #header-area > #header-bar-link {
+    color: var(--color-4);
+}
+
+#header-top-notice a { font-weight: bold; color: var(--color-4) !important; }
+#header-top-notice strong.notice-badge { background: var(--color-4) !important; }
+#header-top-notice strong.notice-badge { padding-left: 0; padding-right: 0; margin-right: -2em; opacity: 0; }
+
+#article-content-wrapper > .header { background: var(--color-2) !important; border-top: 2px solid var(--color-4); }
+
+/* posts list customed layout */
+#article-list > .article-list-row has-category notice > .item > .list-header > strong { width: 0px; }
+#article-list > .article-list-row.notice { background: var(--color-2) !important; }
+#article-list > .article-list-row.notice > .item > a.list-title { vertical-align: middle; }
+#article-list > .article-list-row.notice > .item > a.list-title > .title-value { padding-left: 6px; }
+#article-list > .article-list-row.notice > .item > a.list-title > .list-writer { height: 0px !important; opacity: 0; padding: 0px; }
+#article-list > .article-list-row.notice > .item > .list-header { width:12px; }
+#article-list > .article-list-row > .item > span.a-badge { width: 40px; }
+#article-list > .article-list-row > .item > a.list-title > .title-value { max-width: 240px; }
+#article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span { color: var(--color-4); }
+#article-list > .article-list-row > .item > .list-header > span { background-color: var(--color-4) !important; }
+#article-list > .article-list-row > .item > .list-header > strong { font-size: 0px; padding: 0px; }
+
+/* normal posts */
+#article-list #article-list-category { background: var(--color-2); }
+#article-list #article-list-category > a { display: inline-block; padding: 11px 16px; background: var(--color-1); text-decoration: none; font-size: 12px; font-weight: bold; }
+#article-list #article-list-category > a:focus { background: var(--color-3); }
+
+#board-info { border-top: 4px solid var(--color-4); background: var(--color-3); max-height: 46px; max-block-size: 46px; }
+#board-info > a.board-right-menu { max-height: 40px; border: 0px; vertical-align: middle; color: var(--color-3); }
+
+/* button color animations */
+.btn-primary { border: 0px; animation: infinite rainbowLinkBG 3s; }
+
+.pagination > .active > a, .pagination > .active > a:focus,
+.pagination > .active > a:hover, .pagination > .active > span,
+.pagination > .active > span:focus, .pagination > .active > span:hover { background-color: var(--color-4); border-color: var(--color-4); }
+.pagination > li > a, .pagination > li > span:hover { color: var(--color-4); }
+
+/* replay area */
+#article-reply-area > .header h5 { color: var(--color-2); }
+#article-reply-area #reply-real-area .reply > .reply-header { background: var(--color-4) !important; }
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged { color: var(--color-5) !important; }
+
+/* top search bar */
+header > #header-search-bar #header-search-input { border: 2px solid var(--color-5); }
+header > #header-search-bar #header-search-btn { color: var(--color-4); }
+
+
+/* nav box (left side) */
+nav#nav > .nav-header { background: var(--color-4); }
+header > #header-area > #header-search-link { color: var(--color-4); }
+
+/* keyframes */
+@keyframes rainbowLinkBG {
+    0% { background-color: #ff2a2a; }
+    15% { background-color: #ff7a2a; }
+    30% { background-color: #ffc52a; }
+    45% { background-color: #43ff2a; }
+    60% { background-color: #2a89ff; }
+    75% { background-color: #202082; }
+    90% { background-color: #6b2aff; }
+    100% { background-color: #e82aff; }
+}
+
+@keyframes rainbowLinkBG {
+    000% { background-color: var(--color-0); }
+    015% { background-color: var(--color-1); }
+    030% { background-color: var(--color-2); }
+    045% { background-color: var(--color-3); }
+    060% { background-color: var(--color-4); }
+    075% { background-color: var(--color-5); }
+    090% { background-color: var(--color-4); }
+    100% { background-color: var(--color-3); }
+}
