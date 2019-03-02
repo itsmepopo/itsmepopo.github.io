@@ -1,0 +1,18 @@
+:root {
+    --color-0: #ffffff; /* box color */
+  
+    --color-1: #cceecc; /* */
+    --color-2: #e3f1af; /* */
+    --color-3: #4bc84b; /* main color */
+    --color-4: #71da35; /* sub  color */
+    --color-5: #cff1af; /* */
+  
+    --logo-URL: url("https://jayppo.github.io/CSS/source/CI.png");
+    --logo-Width: 158px;
+    --logo-Height: 50px;
+    --logo-size-mobile: 90px 32px;
+  
+    --icon-URL: url("https://jayppo.github.io/CSS/source/icon.png");
+    --pre-comment: "CSS 공부중인 ";
+    --sub-comment: "명 힘내요!";
+  }
